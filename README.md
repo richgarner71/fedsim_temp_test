@@ -15,6 +15,8 @@ This [Jekyll theme](https://jekyllrb.com/docs/themes/) is developed using the [U
 
 This code uses the [Jekyll](https://jekyllrb.com) site engine and built with Ruby. If you prefer to use Javascript, check out [federalist-uswds-gatsby](https://github.com/18F/federalist-uswds-gatsby), which uses [Gatsby](https://gatsbyjs.org) site engine.
 
+This project assumes that you are comfortable editing source code. If you prefer to launch a website without editing any source code, checkout [uswds-jekyll](https://github.com/18F/uswds-jekyll), which allows you to change the layout and content with configuration files.
+
 This project strives to be compliant with requirements set by [21st Century IDEA Act](https://www.meritalk.com/articles/senate-passes-idea-act/). The standards require that a website or digital service:
 
 - is accessible to individuals with disabilities;
@@ -25,20 +27,6 @@ This project strives to be compliant with requirements set by [21st Century IDEA
 - “is designed around user needs with data-driven analysis influencing management and development decisions, using qualitative and quantitative data to determine user goals, needs, and behaviors, and continually test the website, web-based form, web-based application, or digital service to ensure that user needs are addressed;”
 - allows for user customization; and
 - is mobile-friendly.
-
-## Comparison with [uswds-jekyll](https://github.com/18F/uswds-jekyll)
-
-Both start off looking very similar, but differ in what use cases they are best for. Are you:
-
-- Wanting to have a starter template that you can highly customize?
-- Comfortable editing HTML and CSS source code?
-
-use federalist-uswds-jekyll (this repository). If you:
-
-- Want to use a theme that you can set and forget
-- Are ok with sticking with the general look and feel provided
-
-use uswds-jekyll.
 
 ## Key Functionality
 This repository contains the following examples and functionality:
@@ -71,47 +59,19 @@ permalink: /document-with-sidenav
 ---
 ```
 
-✅ [Search.gov](https://search.gov) integration - Once you have registered and configured Search.gov for your site by following [these instructions](https://federalist.18f.gov/documentation/search/), add your "affiliate" and "access key" to `_config.yml`. Ex.
+✅ Enable search with [Search.gov](https://search.gov) by adding option to `_config.yml`. 
+
 
 ```
+---
 searchgov:
-
-  # You should not change this.
-  endpoint: https://search.usa.gov
-
-  # replace this with your search.gov account
-  affiliate: federalist-uswds-example
-
-  # replace with your access key
-  access_key: xX1gtb2RcnLbIYkHAcB6IaTRr4ZfN-p16ofcyUebeko=
-
-  # this renders the results within the page instead of sending to user to search.gov
-  inline: true
+  endpoint: https://search.usa.gov  # You should not change this.
+  affiliate: federalist-uswds-example # replace this with your search.gov account 
+  access_key: your-access-key # This is placeholder. Not private.
+  inline: true #this renders the results on the same domain. Otherwise, it will render the results in the search.gov domain
+---
 ```
 
-The logic for using Search.gov can be found in `_includes/searchgov/form.html` and supports displaying the results inline or sending the user to Search.gov the view the results. This setting defaults to "inline" but can be changed by setting
-```
-searchgov:
-  inline: false
-```
-in `_config.yml`.
-
-✅ [Digital Analytics Program (DAP)](https://digital.gov/services/dap/) integration - Once you have registered your site with DAP add your "agency" and optionally, `subagency` to `_config.yml` and uncomment the appropriate lines. Ex.
-
-```
-dap:
-  # agency: your-agency
-
-  # Optional
-  # subagency: your-subagency
-```
-
-✅ [Google Analytics](https://analytics.google.com/analytics/web/) integration - If you have a Google Analytics account to use, add your "ua" to `_config.yml` and uncomment the appropriate lines. Ex.
-
-```
-ga:
-  # ua: your-ua
-```
 
 ## How to edit
 - Non-developers should focus on editing markdown content in the `_posts` and `_pages` folder
@@ -136,81 +96,39 @@ ga:
 
 ## Getting Started
 
-### Easy mode
+### Installation as a starter
 
-#### From Federalist
-This will create a copy of this repo in a Github repository of your choice and add it to your Federalist dashboard.
+#### With `npx`
+The simplest way to create your own repository based on this starter is to use `npx` (included with `node`) with `degit`.
 
-- From [Federalist](https://federalistapp.18f.gov/sites) click the "+ Add Site" button.
-- Click the "Use this template" button for the appropriate template
-- Follow the instructions
-
-#### From Github
-This will create a copy of this repo in a Github repository of your choice but you will need to add it your [Federalist dashboard](https://federalistapp.18f.gov/sites/new).
-
-- Click the "Use this template" button above or [here](https://github.com/18F/federalist-uswds-jekyll/generate).
-- Follow the instructions
-- Return to [Federalist](https://federalistapp.18f.gov/sites/new) and add the repository.
-
-### Hard mode
-
-#### With `npx` (requires node)
-    $ npx degit https://github.com/18F/federalist-uswds-jekyll#main <destination-folder>
+    $ npx degit https://github.com/18F/federalist-uswds-jekyll <destination-folder>
     $ cd <destination-folder>
-
-#### Push to your Github repository
-- [Create a new Github repository](https://help.github.com/en/github/getting-started-with-github/create-a-repo).
-- Follow the instructions form Github or
-```
     $ git init
-    $ git symbolic-ref HEAD refs/heads/main
-    $ git add . && git commit -m 'Initial commit'
-    $ git remote add origin git@github.com:<your-org>/<your-repo>.git
-    (Make sure to replace `<your-org>` and `<your-repo>` above with the correct values)
-    $ git push -u origin main
-```
+
+#### With `git`
+    $ git clone --depth 1 https://github.com/18F/federalist-uswds-jekyll <destination-folder>
+    $ cd <destination-folder>
+    $ npm run reset
+    $ git init
 
 ### Installation for development
+
     $ git clone https://github.com/18F/federalist-uswds-jekyll
     $ cd federalist-uswds-jekyll
 
-### Running the application
+Note that when built by Federalist, `npm run federalist` is used instead of the
+`build` script.
 
-#### With locally installed `node` and `ruby`
+### Install dependencies and run app
     $ npm install
     $ bundle install
-    $ npm start 
-    OR
-    $ bundle exec jekyll serve
-
-To build but not serve the site, run `npm run build` or `bundle exec jekyll build`.
-
-#### With Docker
-    $ docker-compose run node npm install
-    $ docker-compose build
-    $ docker-compose up
-
-To build but not serve the site, run:
-```
-docker-compose run ruby bundle exec jekyll build
-```
-.
-
-Note that when built by Federalist, `npm run federalist` is used instead of
-`npm run build`.
+    $ npm start
 
 Open your web browser to [localhost:4000](http://localhost:4000/) to view your
 site.
 
 ### Testing
-
-#### With locally installed `node` and `ruby`
     $ npm test
-    OR
-    $ bundle exec htmlproofer _site; npx a11y '_site/**/*.html'
-
-#### With Docker
-    $ docker-compose run ruby bundle exec htmlproofer _site; npx a11y '_site/**/*.html'
 
 ## Technologies you should be familiarize yourself with
 

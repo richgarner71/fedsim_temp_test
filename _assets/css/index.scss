@@ -184,16 +184,25 @@ hr.media-line{
   padding: 0!important;
 }
 
-.section-btn{
+.section-btn, .section-btn-big{
   text-align: center;
   padding-top: 20px;
   padding-bottom: 20px;
   margin: auto;
   background-color: var(--fedsim-blue1);
   color: white;
-  border-radius: 12px;
   border: solid white 5px;
   cursor: pointer;
+}
+
+.section-btn{
+  border-radius: 12px;
+}
+
+.section-btn-big{
+  border-radius: 80px;
+  padding: 30px;
+  min-width: 400px;
 }
 
 .section-btn p, .section-btn-clear p{
@@ -213,7 +222,7 @@ hr.media-line{
   text-align: center;
   padding-top: 20px;
   padding-bottom: 20px;
-  margin: auto;
+  margin: 20px;
   background-color: white;
   color:  var(--fedsim-blue2);
   border-radius: 40px;
@@ -1026,6 +1035,11 @@ circle {
 .icon-cell img{
   width: 60px;
   height: 60px;
+}
+
+.section-icon-cell img{
+  width: 200px;
+  height: 200px;
 }
 
 .perks-half{

@@ -162,6 +162,11 @@ hr.media-line{
   }
 }
 
+.centered{
+  margin: auto;
+  text-align: center;
+}
+
 .indented p{
   margin-left: 16px;
 }
@@ -210,9 +215,9 @@ hr.media-line{
   padding-bottom: 20px;
   margin: auto;
   background-color: white;
-  color:  var(--fedsim-blue1);
-  border-radius: 12px;
-  border: solid var(--fedsim-blue1) 10px;
+  color:  var(--fedsim-blue2);
+  border-radius: 40px;
+  border: solid var(--fedsim-blue2) 5px;
   cursor: pointer;
 }
 
@@ -221,7 +226,7 @@ hr.media-line{
 }
 
 .section-btn-clear a, .section-btn-clear a:hover{
-  color:  var(--fedsim-blue1);
+  color:  var(--fedsim-blue2);
   text-decoration: none;
 }
 

@@ -197,7 +197,7 @@ hr.media-line{
   cursor: pointer;
 }
 
-.section-btn p{
+.section-btn p, .section-btn-clear p{
   margin: auto;
 }
 
@@ -209,6 +209,28 @@ hr.media-line{
   color: white;
   text-decoration: none;
 }
+
+.section-btn-clear{
+  text-align: center;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  margin: auto;
+  background-color: white;
+  color:  var(--fedsim-blue1);
+  border-radius: 12px;
+  border: solid var(--fedsim-blue1) 10px;
+  cursor: pointer;
+}
+
+.section-btn-clear:hover{
+ background-color: white;
+}
+
+.section-btn-clear a, .section-btn-clear a:hover{
+  color:  var(--fedsim-blue1);
+  text-decoration: none;
+}
+
 
 .one-third{
   width: 33%;

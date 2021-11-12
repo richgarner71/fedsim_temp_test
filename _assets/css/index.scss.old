@@ -15,6 +15,12 @@ a:visited{
   color: var(--fedsim-blue3);
 }
 
+/* MENU BUTTONS */
+
+button,a,div,h5{
+  outline: none !important;
+}
+
 /* FEDSIM COLORS */
 :root{
   --fedsim-blue1: #1D5187;

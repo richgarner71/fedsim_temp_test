@@ -237,7 +237,7 @@ hr.media-line{
 
 @media screen and (max-width: 375px){
   .section-btn-clear{
-    max-width: 250px;
+    min-width: 250px;
     margin-bottom: 24px;
   }
 }

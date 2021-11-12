@@ -4,7 +4,7 @@
 
 html{
   font-family: "Montserrat", sans-serif;
-} 
+}
 
 a{
   text-decoration: none;
@@ -13,6 +13,12 @@ a{
 
 a:visited{
   color: var(--fedsim-blue3);
+}
+
+/* MENU BUTTONS */
+
+button,a,div,h5{
+  outline: none !important;
 }
 
 /* FEDSIM COLORS */
@@ -162,11 +168,6 @@ hr.media-line{
   }
 }
 
-.centered{
-  margin: auto;
-  text-align: center;
-}
-
 .indented p{
   margin-left: 16px;
 }
@@ -184,28 +185,19 @@ hr.media-line{
   padding: 0!important;
 }
 
-.section-btn, .section-btn-big{
+.section-btn{
   text-align: center;
   padding-top: 20px;
   padding-bottom: 20px;
   margin: auto;
   background-color: var(--fedsim-blue1);
   color: white;
+  border-radius: 12px;
   border: solid white 5px;
   cursor: pointer;
 }
 
-.section-btn{
-  border-radius: 12px;
-}
-
-.section-btn-big{
-  border-radius: 80px;
-  padding: 30px;
-  min-width: 400px;
-}
-
-.section-btn p, .section-btn-clear p{
+.section-btn p{
   margin: auto;
 }
 
@@ -215,27 +207,6 @@ hr.media-line{
 
 .section-btn a, .section-btn a:hover{
   color: white;
-  text-decoration: none;
-}
-
-.section-btn-clear{
-  text-align: center;
-  padding-top: 20px;
-  padding-bottom: 20px;
-  margin: 20px;
-  background-color: white;
-  color:  var(--fedsim-blue2);
-  border-radius: 40px;
-  border: solid var(--fedsim-blue2) 5px;
-  cursor: pointer;
-}
-
-.section-btn-clear:hover{
- background-color: white;
-}
-
-.section-btn-clear a, .section-btn-clear a:hover{
-  color:  var(--fedsim-blue2);
   text-decoration: none;
 }
 
@@ -307,18 +278,19 @@ hr.media-line{
   }
 }
 
-//Video styles
-iframe.vidThumb{
+//Video styles  
+iframe.vidThumb, object.videoObj{
   width: 500px;
   height: 281px;
 }
 
 @media screen and (max-width: 414px){
-  iframe.vidThumb{
+  iframe.vidThumb, object.videoObj{
     width: 350px;
     height: 197px;
   }
 }
+	
 
 //Header styles
 .usa-banner__inner {
@@ -1037,11 +1009,6 @@ circle {
   height: 60px;
 }
 
-.section-icon-cell img{
-  width: 140px;
-  height: 140px;
-}
-
 .perks-half{
   width: 50%;
 }
@@ -1307,7 +1274,13 @@ hr.small-line{
 }
 
 .dialog{
-  max-width: 700px;
+  width: 700px;
+}
+
+@media screen and (max-width: 414px){
+	 .dialog{
+	 max-width: 400px;
+	}
 }
 
 .dialog p{

@@ -343,6 +343,11 @@ hr.media-line{
   }
 }
 
+
+.forcedCenter{
+	text-align: center!important;
+}
+
 //Video styles  
 iframe.vidThumb, object.videoObj{
   width: 500px;
@@ -486,6 +491,7 @@ hr.footer-border{
 
 .flex-wrapper-big, .flex-wrapper-full{
   margin: auto;
+	padding: 0 12px 0 12px;
   display: flex;
 }
 

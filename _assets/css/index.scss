@@ -533,7 +533,7 @@ hr.footer-border{
 
 
 .infoblock, .infoblock-fixed, .darkblock, .darkblock-alt{
-  text-align: center;
+  text-align: left;
 }
 
 .modalblock{
@@ -660,14 +660,14 @@ hr.footer-border{
 
 .third-block{
   display: block;
-  text-align: center;
+  text-align: left;
 }
 
 .fourth-block{
   display: block;
   width: 25%;
   margin: 0 4px;
-  text-align: center;
+  text-align: left;
   padding-bottom: 16px;
 }
 
@@ -684,7 +684,7 @@ hr.footer-border{
   height: 190px;
   margin: 10px;
   display: block;
-  text-align: center;
+  text-align: left;
 }
 
 @media screen and (max-width: 414px){
@@ -861,7 +861,7 @@ display: none;
 .problock, .problock-container, .problock-inner{
   width: 200px;
   display: block;
-  text-align: center;
+  text-align: left;
 }
 
 .problock-container{
@@ -1159,7 +1159,7 @@ circle {
   font-size: 0.8em;
   font-weight: 600;
   padding: 8px;
-  text-align: center;
+  text-align: left;
   vertical-align: top;
   display: inline-block;
   border: 0px;
@@ -1228,7 +1228,7 @@ circle {
   display: grid;
   width: 110px;
   padding: 10px 2px;
-  text-align: center;
+  text-align: left;
 }
 
 .linebox{
@@ -1320,7 +1320,7 @@ hr.small-line{
 
 .dialog, .dialog-wide, .dialog-grey {
 	z-index: 3;
-	text-align: center;
+	text-align: left;
   padding: 30px;
 	position: fixed;
 	top: 50%;

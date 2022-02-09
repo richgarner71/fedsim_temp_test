@@ -79,6 +79,10 @@ p{
   }
 }
 
+li:not(:last-child){
+	padding-bottom: 12px;
+}
+
 img{
 	-webkit-transform: translateZ(0); 
 	transform: translateZ(0);

@@ -1599,12 +1599,22 @@ li.input-li{
 
 /* FAQ Tables */
 
+.faq-table {
+  width: 100%;
+  border: var(--fedsim-darkgrey);
+  border-width: 1px;
+}
+
 .faq-table td{
+  border: var(--fedsim-darkgrey);
+  border-width: 1px;
   text-align: center;
 }
 
 .backBlue {
   background-color: var(--fedsim-blue2);
+  color: black;
+  font-weight:700;
 }
 
 /* Clearfix */

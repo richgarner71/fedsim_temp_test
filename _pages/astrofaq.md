@@ -4,7 +4,7 @@ layout: wide
 sidenav: false
 ---
 
-{% include astro.html %}
+{% include astrofaq.html %}
 
 
 

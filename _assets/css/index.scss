@@ -1600,12 +1600,10 @@ li.input-li{
 /* FAQ Tables */
 
 .faq_table {
-  width: 100%;
-  border: var(--fedsim-darkgrey);
-  border-width: 1px;
+  min-width: 100%;
 }
 
-.faq_table td{
+td {
   border: var(--fedsim-darkgrey);
   border-width: 1px;
   text-align: center;

@@ -1601,9 +1601,10 @@ li.input-li{
 
 .faq_table {
   min-width: 100%;
+  color: var(--fedsim-blue1);
 }
 
-td {
+.faq_table td {
   border: var(--fedsim-darkgrey);
   border-width: 1px;
   text-align: center;

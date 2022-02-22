@@ -1599,6 +1599,10 @@ li.input-li{
 
 /* FAQ Tables */
 
+.faq-table td{
+  text-align: center;
+}
+
 .backBlue {
   background-color: var(--fedsim-blue2);
 }

@@ -32,6 +32,7 @@ button,a,div,h5{
   --fedsim-fedsimgrey: #f1f1f1;
   --fedsim-purple: #570A3B;
   --fedsim-pink: #AA839D;
+  --fedsim-darkpink: #884477;
   --fedsim-gold: #a38e4a;
   --fedsim-offwhite: #f3f3f3;
 }
@@ -88,22 +89,32 @@ img{
 	transform: translateZ(0);
 }
 
-.returnLink{
-	font-size: 0.7em;
-	color: var(--fedsim-litegrey);
-	font-weight: none;
+td{
+  font-weight: 600;
 }
 
-.camelCaseTex{
-	text-decoration: uppercase;
+th{
+  font-weight: 800;
 }
 
 
 //General stylings
 
+.back-blue {
+  background-color: var(--fedsim-blue4);
+}
+
 .back-grey{
   background-color: var(--fedsim-litegrey) !important;
   font-weight: 600;
+}
+
+.back-pink{
+  background-color: var(--fedsim-pink);
+}
+
+.back-darkpink{
+  background-color: var(--fedsim-darkpink);
 }
 
 .back-white{
@@ -119,6 +130,10 @@ img{
 .greyborder{
   background-color: var(--fedsim-litegrey);
   border: solid 2px var(--fedsim-darkgrey);
+}
+
+.camelCaseTex{
+	text-decoration: uppercase;
 }
 
 .grid-row-framed{
@@ -141,6 +156,12 @@ img{
 .v-buffer{
   padding-top: 10px;
   padding-bottom: 10px;
+}
+
+.returnLink{
+	font-size: 0.7em;
+	color: var(--fedsim-litegrey);
+	font-weight: none;
 }
 
 .hidden{
@@ -1599,6 +1620,8 @@ li.input-li{
 
 /* FAQ Tables */
 
+
+
 .faq_table {
   min-width: 80%;
   margin:auto;
@@ -1611,10 +1634,8 @@ li.input-li{
   padding: 10px;
 }
 
-.backBlue {
-  background-color: var(--fedsim-blue4);
-  font-weight:700;
-}
+
+
 
 /* Clearfix */
 .cf:before,

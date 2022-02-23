@@ -1636,9 +1636,10 @@ li.input-li{
 /* FAQ Tables */
 
 .faq_table {
-  width: 100%;
+  width: 90%;
   margin:auto;
   border-spacing: 0;
+  border-collapse: separate;
 }
 
 .faq_table td {

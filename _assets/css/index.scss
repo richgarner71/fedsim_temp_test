@@ -101,8 +101,22 @@ th{
   font-weight: 800;
 }
 
-.borderless {
-  border: black hidden 0;
+.border-only-top td{
+  border-top: 3px;
+  border-left: 0;
+  border-right: 0;
+  border-bottom: 0;
+}
+
+.invertedCells {
+  background-color: var(--fedsim-blue3) !important;
+  color: white !important;
+}
+
+.invertedCells :first{
+  font-style: italic;
+  color: var(--fedsim-darkgrey); 
+  background-color:var(--fedsim-litegrey);
 }
 
 

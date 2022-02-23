@@ -21,6 +21,10 @@ button,a,div,h5{
   outline: none !important;
 }
 
+button {
+  text-align: center !important;
+}
+
 /* FEDSIM COLORS */
 :root{
   --fedsim-blue1: #1D5187;
@@ -1243,6 +1247,7 @@ circle {
   color: white;
   background-color: var(--fedsim-blue1);
   padding: 10px;
+  text-align: center !important;
 }
 
 .sectorbar h3{
@@ -1644,7 +1649,7 @@ li.input-li{
   padding: 10px;
 }
 
-.border-only-top td{
+.border-only-top, .border-only-top td{
   border-top: 3px;
   border-left: 0;
   border-right: 0;

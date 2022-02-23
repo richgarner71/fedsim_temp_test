@@ -1666,7 +1666,7 @@ li.input-li{
   font-size: 0.7em;
 }
 
-.invertedCells :first{
+.invertedCells td:first-child{
   font-style: italic;
   color: var(--fedsim-darkgrey); 
   background-color:var(--fedsim-litegrey);

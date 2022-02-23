@@ -32,7 +32,7 @@ button,a,div,h5{
   --fedsim-fedsimgrey: #f1f1f1;
   --fedsim-purple: #570A3B;
   --fedsim-pink: #AA839D;
-  --fedsim-darkpink: #884477;
+  --fedsim-litepink: #D9A7C8;
   --fedsim-gold: #a38e4a;
   --fedsim-offwhite: #f3f3f3;
 }
@@ -89,6 +89,10 @@ img{
 	transform: translateZ(0);
 }
 
+tr, th, td{
+  color: var(--fedsim-darkgrey)
+}
+
 td{
   font-weight: 600;
 }
@@ -134,6 +138,10 @@ th{
 
 .camelCaseTex{
 	text-decoration: uppercase;
+}
+
+.text-small{
+  font-size: 0.7em;
 }
 
 .grid-row-framed{
@@ -205,11 +213,6 @@ hr.media-line{
 
 .indented p{
   margin-left: 16px;
-}
-
-.post-text{
-  font-size: 1.2em;
-  font-weight: 500;
 }
 
 .sidepadded{

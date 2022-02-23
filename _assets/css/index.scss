@@ -93,35 +93,16 @@ tr, th, td{
   color: var(--fedsim-darkgrey)
 }
 
+tr {
+  border-spacing: 0;
+}
+
 td{
   font-weight: 600;
 }
 
 th{
   font-weight: 800;
-}
-
-.border-only-top td{
-  border-top: 3px;
-  border-left: 0;
-  border-right: 0;
-  border-bottom: 0;
-}
-
-.invertedCells {
-  background-color: var(--fedsim-blue3) !important;
-}
-
-.invertedCells td{
-  color: white !important;
-  font-weight: 600;
-  font-size: 0.7em;
-}
-
-.invertedCells :first{
-  font-style: italic;
-  color: var(--fedsim-darkgrey); 
-  background-color:var(--fedsim-litegrey);
 }
 
 
@@ -1652,12 +1633,9 @@ li.input-li{
 
 /* FAQ Tables */
 
-
-
 .faq_table {
-  min-width: 80%;
+  width: 100%;
   margin:auto;
-  color: var(--fedsim-blue1);
 }
 
 .faq_table td {
@@ -1666,7 +1644,28 @@ li.input-li{
   padding: 10px;
 }
 
+.border-only-top td{
+  border-top: 3px;
+  border-left: 0;
+  border-right: 0;
+  border-bottom: 0;
+}
 
+.invertedCells {
+  background-color: var(--fedsim-blue3) !important;
+}
+
+.invertedCells td{
+  color: white !important;
+  font-weight: 600;
+  font-size: 0.7em;
+}
+
+.invertedCells :first{
+  font-style: italic;
+  color: var(--fedsim-darkgrey); 
+  background-color:var(--fedsim-litegrey);
+}
 
 
 /* Clearfix */

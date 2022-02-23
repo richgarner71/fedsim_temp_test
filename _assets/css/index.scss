@@ -1648,6 +1648,10 @@ li.input-li{
   padding: 10px;
 }
 
+.leftAlignedCells td{
+  text-align: left;
+}
+
 .border-only-top, .border-only-top td{
   border-top: 3px solid var(--fedsim-darkgrey);
   border-left: 0;

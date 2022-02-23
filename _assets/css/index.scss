@@ -1638,6 +1638,7 @@ li.input-li{
 .faq_table {
   width: 100%;
   margin:auto;
+  border-spacing: 0;
 }
 
 .faq_table td {
@@ -1647,7 +1648,7 @@ li.input-li{
 }
 
 .border-only-top, .border-only-top td{
-  border-top: 3px;
+  border-top: 3px solid var(--fedsim-darkgrey);
   border-left: 0;
   border-right: 0;
   border-bottom: 0;
@@ -1658,7 +1659,7 @@ li.input-li{
 }
 
 .invertedCells td{
-  color: white !important;
+  color: white;
   font-weight: 600;
   font-size: 0.7em;
 }

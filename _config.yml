@@ -82,7 +82,7 @@ primary_navigation:
         url: /ourwork/
       - name: ASTRO
         url: /astro/
-        - name: ASTRO FAQ
+      - name: ASTRO FAQ
         url: /astrofaq/
       - name: CSO
         url: /cso/

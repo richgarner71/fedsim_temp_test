@@ -110,7 +110,12 @@ th{
 
 .invertedCells {
   background-color: var(--fedsim-blue3) !important;
+}
+
+.invertedCells td{
   color: white !important;
+  font-weight: 600;
+  font-size: 0.7em;
 }
 
 .invertedCells :first{

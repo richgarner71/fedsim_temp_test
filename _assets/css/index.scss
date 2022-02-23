@@ -93,11 +93,8 @@ img{
 	transform: translateZ(0);
 }
 
-tr, th, td{
-  color: var(--fedsim-darkgrey)
-}
-
-tr {
+tr, th, td{ 
+  color: var(--fedsim-darkgrey);
   border-spacing: 0;
 }
 

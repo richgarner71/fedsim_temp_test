@@ -1675,11 +1675,11 @@ li.input-li{
   background-color:var(--fedsim-litegrey);
 }
 
-ol.questions {
+#questions {
   font-weight: 400;
 }
 
-ol.questions li::marker {
+#questions li::marker {
   font-weight: bold;
 }
 

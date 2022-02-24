@@ -1675,6 +1675,14 @@ li.input-li{
   background-color:var(--fedsim-litegrey);
 }
 
+ol.questions {
+  font-weight: 400;
+}
+
+ol.questions li::marker {
+  font-weight: bold;
+}
+
 
 /* Clearfix */
 .cf:before,

@@ -10,15 +10,15 @@
     <div id="toolkit" class="infoblock-fixed withborder">
         <h2>Data Collection Test</h2>
         <p>Fill out the fields and click "Submit."</p>
-   
+        <input id="input-submit" type="submit" value="Submit">
 
 
     </div>
 </div>
 
 <script type="text/javascript">
-    
-$("#download_1").click(function() {
+
+$("#input-submit").click(function() {
     var json_pre = '[{"Id":1,"UserName":"Sam Smith"},{"Id":2,"UserName":"Fred Frankly"},{"Id":1,"UserName":"Zachary Zupers"}]';
     var json = $.parseJSON(json_pre);
     

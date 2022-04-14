@@ -19,20 +19,7 @@
 <script type="text/javascript">
 
 $('#input-submit').on('submit', function (e) {
-    alert("Saving...");
-    var json_pre = '[{"Id":1,"UserName":"Sam Smith"},{"Id":2,"UserName":"Fred Frankly"},{"Id":1,"UserName":"Zachary Zupers"}]';
-    var json = $.parseJSON(json_pre);
-    
-    var csv = JSON2CSV(json);
-    var downloadLink = document.createElement("a");
-    var blob = new Blob(["\ufeff", csv]);
-    var url = URL.createObjectURL(blob);
-    downloadLink.href = url;
-    downloadLink.download = "data.csv";
-    
-    document.body.appendChild(downloadLink);
-    downloadLink.click();
-    document.body.removeChild(downloadLink);
+    window.open('mailto:test@example.com?subject=subject&body=body');
     });
 
 </script>

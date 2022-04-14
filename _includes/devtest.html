@@ -10,17 +10,18 @@
     <div id="toolkit" class="infoblock-fixed withborder">
         <h2>Data Collection Test</h2>
         <p>Fill out the fields and click "Submit."</p>
-        <input id="input-submit" type="submit" value="Submit">
-
+        <button id="submit_btn" type="submit"  onclick="javascript:submit_action();">Submit</button>
+       
 
     </div>
 </div>
 
 <script type="text/javascript">
 
-$('#input-submit').on('submit', function (e) {
+function submit_action(){
     alert("Sending...");
     window.open('mailto:richgarner71@gmail.com?subject=Registration&body=This is my registration.');
-    });
+};
+    
 
 </script>

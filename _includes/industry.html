@@ -23,7 +23,8 @@
 <div class="flex-wrapper-big">
     <div id="opp" class="infoblock-fixed darkblock"> 
         <h2 class="whitetext">Opportunities</h2>
-        <p>Active procurements listed are in the stage of collecting requirements and solicitation development with the client. All official notifications will be transmitted via eBuy. For updates, visit our Leadership page to identify the designated point of contact. </p>
+        <p>Active procurements listed are in the stage of collecting requirements and solicitation development with the client. All official notifications will be transmitted
+via the FEDSIM contracting officer. For updates, visit our Leadership page to identify the designated point of contact. </p>
 
         <iframe class="d2d_frame" src="https://d2d.gsa.gov/tableau-report-for-embed/9211"></iframe>
     
@@ -45,6 +46,11 @@
         <h2>Industry Toolkit</h2>
         <p>FEDSIM pursues ongoing communication with industry leaders by providing relevant opportunities and creating forums to further dialogue. </p>
    
+         <h4>FEDSIM Market Assessment Discussion (MAD)</h4>
+        <iframe class="vidThumb" src="https://www.youtube.com/embed/uv9UBHyFIB0" frameborder="0" aria-label="FEDSIM Market Assessment Discussion"  
+        allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+        
         <h4>FEDSIM Due Diligence for Industry Partners</h4>
         <iframe class="vidThumb" src="https://www.youtube.com/embed/y4PtAs0LPKs" frameborder="0" aria-label="FEDSIM Due Diligence for Industry Partners"
         allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
@@ -66,6 +72,43 @@
 </div>   
 <div id="form-wrapper" class="flex-wrapper-big">
 
-<iframe src="https://docs.google.com/forms/d/e/1FAIpQLSdw42WU9iD0juZcAxEGovVFnebzTuxgCCthmcBefDSkuyyuUA/viewform?embedded=true" width="640" height="729" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
+<form name="gform" id="gform" enctype="text/plain"
+    action="https://docs.google.com/forms/d/e/1FAIpQLSdw42WU9iD0juZcAxEGovVFnebzTuxgCCthmcBefDSkuyyuUA/formResponse?" 
+    target="hidden_iframe2" onsubmit="return(runValidation())">
+
+<p>For more information on the "First Fridays" meetings, please provide the following:</p>
+
+<div class="flex-wrapper">
+    <div class="half left">
+        <label for="entry.1843170539">First Name <span class="req">*</span></label>
+        <input id="First Name" type="text" aria-label="first name field" name="entry.1843170539" maxlength="50" size="30">
+    </div>   
+    <div class="half left">
+        <label for="entry.1491930422">Last Name <span class="req">*</span></label>
+        <input id="Last Name" type="text" aria-label="last name field" name="entry.1491930422" maxlength="50" size="30">
+    </div>
+    <div class="half left">
+        <label for="entry.578640437">Email <span class="req">*</span></label>
+        <input id="Email" type="text" aria-label="email field" name="entry.578640437" maxlength="50" size="30" required>
+    </div>
 </div>
 
+
+<div class="v-buffer"></div>
+
+    <div class='flex-wrapper-big' style="margin-left: 0 12px 0 12px;">
+        <input id="input-submit" type='submit' value='Submit'>
+    </div>
+    </form>
+    <iframe name="hidden_iframe2" id="hidden_iframe2" style="display:none;" onload="if(submitted) {}"></iframe>
+</div>
+
+<script type="text/javascript">
+
+    function runValidation() {
+        document.getElementById("form-wrapper").classList.add('hide');
+        document.getElementById("form-message").classList.toggle('hide');
+        return true;
+    }
+
+  </script>

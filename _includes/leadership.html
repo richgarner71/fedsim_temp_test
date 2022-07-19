@@ -2,10 +2,8 @@
     <!-- first row -->
     <div class="infoblock">
         <h1>FEDSIM Leadership</h1>
-        <p>FEDSIM is divided into seven sectors: Civilian, Air Force, Department of Defense, Army, Navy, GCC and Innovation. Each sector understands the specialized circumstances and regulations applicable to their sectors. This specialization helps deliver value to these client agencies.
-        <br><br>
-        Select each sector title to see additional sector group managers. 
-            <br>Click on the images below to see their professional bios.</p>
+        <p>FEDSIM is divided into eight sectors. Each sector understands the specialized circumstances and regulations applicable to their sectors. This specialization helps deliver value to these client agencies.</p>
+        <p>Select the sector group manager buttons to see additional group managers. Click on the images below to see professional bios of FEDSIM Directors.</p>
     </div> 
 </div>
 
@@ -45,15 +43,6 @@
             <p class="allcaps">Erin Childs</p>
             <p>PMO Director, FEDSIM</p>
         </button>
-        </div>
-    <div class="bio-spacer-big"></div>
-    <div class="flex-wrapper">
-        <button class="memberblock-head"  onclick="javascript:openBio('bioPopup_EQ');" taborder="5">
-            {% asset ErinQuick.jpg class="member-pic" alt="Erin Quick" %}
-            <br>
-            <p class="allcaps">Erin Quick</p>
-            <p>Acquisition Quality Director, FEDSIM</p>
-        </button>
     </div>
 </div>
 <div class="v-buffer hide-mobile"></div>
@@ -65,7 +54,7 @@
         onmouseover="javascript:findBox('sect-1-box');"
         onmouseout="javascript:loseBox('sect-1-box');"
         onclick="window.location='#sect-1-box';" taborder="7">
-            CIVILIAN
+            <h1>CIVILIAN</h1>
         </button>
         <div class="infoblock linebox">
             <hr class="small-line">
@@ -74,7 +63,7 @@
         onmouseover="javascript:findBox('sect-2-box');"
         onmouseout="javascript:loseBox('sect-2-box');"
         onclick="window.location='#sect-2-box';" taborder="8">
-            AIR FORCE
+            <h1>AIR FORCE</h1>
         </button>
         <div class="infoblock linebox">
             <hr class="small-line">
@@ -83,7 +72,7 @@
         onmouseover="javascript:findBox('sect-3-box');"
         onmouseout="javascript:loseBox('sect-3-box');"
         onclick="window.location='#sect-3-box';" taborder="9">
-            DOD
+            <h1>DOD</h1>
         </button>
         <div class="infoblock linebox">
             <hr class="small-line">
@@ -92,7 +81,7 @@
         onmouseover="javascript:findBox('sect-4-box');"
         onmouseout="javascript:loseBox('sect-4-box');"
         onclick="window.location='#sect-4-box';" taborder="10">
-            ARMY
+            <h1>ARMY</h1>
         </button>
         <div class="infoblock linebox">
             <hr class="small-line">
@@ -101,7 +90,7 @@
         onmouseover="javascript:findBox('sect-5-box');"
         onmouseout="javascript:loseBox('sect-5-box');"
         onclick="window.location='#sect-5-box';" taborder="11">
-            NAVY
+            <h1>NAVY</h1>
         </button>
         <div class="infoblock linebox">
             <hr class="small-line">
@@ -110,7 +99,7 @@
         onmouseover="javascript:findBox('sect-6-box');"
         onmouseout="javascript:loseBox('sect-6-box');"
         onclick="window.location='#sect-6-box';" taborder="12">
-            GCC
+            <h1>GCC</h1>
         </button>
         <div class="infoblock linebox">
             <hr class="small-line">
@@ -119,7 +108,16 @@
         onmouseover="javascript:findBox('sect-7-box');"
         onmouseout="javascript:loseBox('sect-7-box');"
         onclick="window.location='#sect-7-box';" taborder="13">
-            INNOVATION
+            <h1>INNOVATION</h1>
+        </button>
+        <div class="infoblock linebox">
+            <hr class="small-line">
+        </div>
+        <button id="sect-8-btn"  class="darkblock wordbox" 
+        onmouseover="javascript:findBox('sect-8-box');"
+        onmouseout="javascript:loseBox('sect-8-box');"
+        onclick="window.location='#sect-8-box';" taborder="14">
+            <h1>APM</h1>
         </button>
     </div>
 </div>
@@ -137,14 +135,14 @@
                     <p>Civilian Director</p>
                 </button>
                 <button class="memberblock" onclick="javascript:openBio('bioPopup_LW');" taborder="15">
-                    {% asset Laurel-W.png class="member-pic" alt="Laurel Weiskopf" %}
+                    {% asset Laurel-W.png class="member-pic" alt="Laurel Weiskopf Smith" %}
                     <br>
-                    <p class="allcaps">Laurel Weiskopf</p>
+                    <p class="allcaps">Laurel Weiskopf Smith</p>
                     <p>Acquisition Director</p>
                 </button>
             </div>
             <div class="sectorbar sector-1" onclick="javascript:openBio('sectorPopup_CIV');">
-                <h3>CIVILIAN</h3>
+                <h3>CIVILIAN Group Managers</h3>
             </div>
         </div>
         
@@ -152,21 +150,21 @@
         
         <div id="sect-2-box" class="sectorblock">   <!-- AIR FORCE block ---------------------------------->
             <div class="flex-wrapper">
-                <button class="memberblock" onclick="javascript:openBio('bioPopup_KE');" taborder="16">
-                    {% asset Ken-Evans.png class="member-pic" alt="Ken Evans" %}
+                <button class="memberblock" onclick="javascript:openBio('bioPopup_BG');" taborder="16">
+                    {% asset BrookeGill.jpg class="member-pic" alt="Brooke Gill" %}
                     <br>
-                    <p class="allcaps">Ken Evans</p>
-                    <p>Air Force/DOD Director</p>
+                    <p class="allcaps">Brooke Gill</p>
+                    <p>Air Force Director</p>
                 </button>
                 <button class="memberblock"  onclick="javascript:openBio('bioPopup_GL');" taborder="17">
-                    {% asset ShadowM_Icon.png class="member-pic" alt="Greg Lee" %}
+                    {% asset GregLee.jpg class="member-pic" alt="Greg Lee" %}
                     <br>
                     <p class="allcaps">Greg Lee</p>
                     <p>Acquisition Director</p>
                 </button>
             </div>
             <div class="sectorbar sector-2" onclick="javascript:openBio('sectorPopup_AIR');">
-                <h3>AIR FORCE</h3>
+                <h3>AIR FORCE Group Managers</h3>
             </div>
         </div>
 
@@ -178,7 +176,7 @@
                     {% asset Ken-Evans.png class="member-pic" alt="Ken Evans" %}
                     <br>
                     <p class="allcaps">Ken Evans</p>
-                    <p>Air Force/DOD Director</p>
+                    <p>DOD Director</p>
                 </button>
                 <button class="memberblock" onclick="javascript:openBio('bioPopup_SL');" taborder="19">
                     {% asset Stacey-L.png class="member-pic" alt="Stacey Lowenberg" %}
@@ -188,7 +186,7 @@
                 </button>
             </div>
             <div class="sectorbar sector-3" onclick="javascript:openBio('sectorPopup_DOD');">
-                <h3>DOD</h3>
+                <h3>DOD Group Managers</h3>
             </div>
         </div>
     </div>
@@ -202,7 +200,7 @@
         <div id="sect-4-box" class="sectorblock">   <!-- ARMY block ---------------------------------->
             <div class="flex-wrapper">
                 <button class="memberblock" onclick="javascript:openBio('bioPopup_MM');" taborder="20">
-                    {% asset Mike-M.png class="member-pic" alt="Mike Marquez" %}
+                    {% asset MikeMarquez.jpg class="member-pic" alt="Mike Marquez" %}
                     <br>
                     <p class="allcaps">Mike Marquez</p>
                     <p>Army/Navy Director</p>
@@ -210,12 +208,12 @@
                 <button class="memberblock" onclick="javascript:openBio('bioPopup_JM');" taborder="21">
                     {% asset JM_pic.png class="member-pic" alt="Jeff McMullan" %}
                     <br>
-                    <p class="allcaps">Jeff McMullen</p>
+                    <p class="allcaps">Jeff McMullan</p>
                     <p>Acquisition Director</p>
                 </button>
             </div>
             <div class="sectorbar sector-4" onclick="javascript:openBio('sectorPopup_ARMY');">
-                <h3>ARMY</h3>
+                <h3>ARMY Group Managers</h3>
             </div>
         </div>
         
@@ -224,20 +222,20 @@
         <div id="sect-5-box" class="sectorblock">   <!-- NAVY block ---------------------------------->
             <div class="flex-wrapper">
                 <button class="memberblock" onclick="javascript:openBio('bioPopup_MM');" taborder="22">
-                    {% asset Mike-M.png class="member-pic" alt="Mike Marquez" %}
+                    {% asset MikeMarquez.jpg class="member-pic" alt="Mike Marquez" %}
                     <br>
                     <p class="allcaps">Mike Marquez</p>
                     <p>Army/Navy Director</p>
                 </button>
                 <button class="memberblock" onclick="javascript:openBio('bioPopup_DB');" taborder="23">
-                    {% asset ShadowM_Icon.png class="member-pic" alt="Dennis Bailey" %}
+                    {% asset DBailey_Flag.jpg class="member-pic" alt="Dennis Bailey" %}
                     <br>
                     <p class="allcaps">Dennis Bailey</p>
                     <p>Acquisition Director</p>
                 </button>
             </div>
             <div class="sectorbar sector-5" onclick="javascript:openBio('sectorPopup_NAVY');">
-                <h3>NAVY</h3>
+                <h3>NAVY Group Managers</h3>
             </div>
         </div>
         
@@ -259,7 +257,7 @@
                 </button>
             </div>
             <div class="sectorbar sector-6" onclick="javascript:openBio('sectorPopup_GCC');">
-                <h3>GCC</h3>
+                <h3>GCC Group Managers</h3>
             </div>
         </div>
     </div>
@@ -268,37 +266,59 @@
 <div class="v-buffer no-mobile"></div>
 
 <!-- fifth row-->
-<div class="flex-wrapper-big">
+
+<!-- fourth row -->
+<div class="flex-wrapper-big" style="display: block !important;">
     <div class="flex-wrapper">
-        <div class="blankblock"></div>
-        
-        <div class="bio-spacer"></div>
-        
+
+        <div class="bio-spacer-big"></div>
+        <div class="bio-spacer-big"></div>
+     
         <div id="sect-7-box" class="sectorblock">   <!-- INNOVATION block ---------------------------------->
             <div class="flex-wrapper">
-                <button class="memberblock" onclick="javascript:openBio('bioPopup_CH');" taborder="26">
-                    {% asset Chris-Hamm.png class="member-pic" alt="Chris Hamm" %}
+                <button class="memberblock" onclick="javascript:openBio('bioPopup_AD');" taborder="26">
+                    {% asset AngieDonahoo.png class="member-pic" alt="Angie Donahoo" %}
                    <br>
-                   <p class="allcaps">Chris Hamm</p>
+                   <p class="allcaps">Angie Donahoo</p>
                    <p>Innovation Director</p>
                 </button>
-                <button class="memberblock" onclick="javascript:openBio('bioPopup_AD');" taborder="27">
-                    {% asset AngieDonahoo.png class="member-pic" alt="Angie Donahoo" %}
-                    <br>
-                    <p class="allcaps">Angie Donahoo</p>
-                    <p>Innovation Group Manager</p>
+
+                <button class="memberblock" onclick="javascript:openBio('bioPopup_BW');" taborder="26">
+                    {% asset ShadowM_Icon.png class="member-pic" alt="Bobby Wade" %}
+                   <br>
+                   <p class="allcaps">Bobby Wade</p>
+                   <p>Aqcuisition Director</p>
                 </button>
+
             </div>
-            <div class="sectorbar sector-7"  style="border: solid 2px var(--fedsim-darkgrey); color: var(--fedsim-darkgrey);">
-                <h3>INNOVATION</h3>
+            <div class="sectorbar sector-7" onclick="javascript:openBio('sectorPopup_INN');">
+                <h3>INNOVATION Group Managers</h3>
             </div>
         </div>
         
         <div class="bio-spacer"></div>
-        
-        <div class="blankblock"></div>
+
+        <div id="sect-8-box" class="sectorblock">   <!-- AMP block ---------------------------------->
+            <div class="flex-wrapper">
+                <button class="memberblock" onclick="javascript:openBio('bioPopup_EQ');" taborder="26">
+                    {% asset ErinQuick.jpg class="member-pic" alt="Erin Quick" %}
+                   <br>
+                   <p class="allcaps">Erin Quick</p>
+                   <p>Acquisition Quality Director</p>
+                </button>
+            </div>
+            <div class="sectorbar sector-8" onclick="javascript:openBio('sectorPopup_APM');">
+                <h3>APM Group Managers</h3>
+            </div>
+        </div>
+
+        <div class="bio-spacer-big"></div>
+        <div class="bio-spacer-big"></div>
+
     </div>
 </div>
+
+
 
 <!-- CB popup -->
 <div id="bioPopup_CB" class="dialog-overlay" aria-hidden="true" onclick="javascript:closeBio();">
@@ -442,6 +462,57 @@
     </div>
 </div>
 
+<!-- BG popup -->
+<div id="bioPopup_BG" class="dialog-overlay" aria-hidden="true" onclick="javascript:closeBio();">
+    <div class="dialog" role="dialog" >
+        <div class="modalblock">
+            <div class="flex-wrapper">
+                {% asset BrookeGill.jpg class="member-pic" alt="Brooke Gill" %}
+                <div class="infoblock">
+                    <span style="font-weight: bold;">
+                        <p class="allcaps">Brooke Gill</p>
+                        <p>Air Force Director</p>
+                    </span>
+                </div>
+            </div>
+            <p>Brooke serves as the Director for FEDSIM’s Air Force Sector. She brings over a decade of acquisition management experience having previously served as a Group Manager in the Navy Sector, Project Manager (PM), Contracting Officer's Representative (COR), and Acquisition Project Manager (APM) at FEDSIM. Brooke has worked on a diverse set of complex IT and professional services requirements for a variety of customers in both the DoD and Civilian Sectors. 
+<br><br>
+             Brooke has her Master’s in Business Administration from George Washington University and undergraduate degree from the University of Richmond. She also holds a FAC/PPM Level III and COR Level III certifications.
+</p>
+            <p style="font-style: italic;">Click anywhere to close.</p>
+        </div>
+    </div>
+</div>
+                
+<!-- EC popup -->
+<div id="bioPopup_EC" class="dialog-overlay" aria-hidden="true" onclick="javascript:closeBio();">
+    <div class="dialog" role="dialog" >
+        <div class="modalblock">
+            <div class="flex-wrapper">
+                {% asset Erin-Childs.png class="member-pic" alt="Erin Childs" %}
+                <div class="infoblock">
+                    <span style="font-weight: bold;">
+                        <p class="allcaps">Erin Childs</p>
+                        <p>PMO Director</p>
+                    </span>
+                </div>
+            </div>
+            <p>Erin Childs serves as the Director of the Program Management Office for FEDSIM. Erin directs all
+                management and program decisions to deliver innovative, mission-focused results for FEDSIM
+                clients. Erin develops internal human capital strategies and initiatives, manages the financial
+                health of the organization, and ensures quality acquisition processes and practices. She has over
+                eight years of experience in project management, human capital, facilitation, and process
+                improvement.
+                <br><br>
+                In her prior role at FEDSIM, she created and implemented FEDSIM University, a competency-
+                based learning and development program. Erin holds a Master of Business Administration from
+                George Washington University.</p>
+            <p style="font-style: italic;">Click anywhere to close.</p>
+        </div>
+    </div>
+</div>
+
+
 <!-- EQ popup -->
 <div id="bioPopup_EQ" class="dialog-overlay" aria-hidden="true" onclick="javascript:closeBio();">
     <div class="dialog" role="dialog" >
@@ -455,10 +526,9 @@
                     </span>
                 </div>
             </div>
-            <p>Erin Quick serves as FEDSIM’s Acquisition Quality Director where she is responsible for managing FEDSIM’s team of Acquisition Project Managers who lead pre-award activities across FEDSIM. Erin previously served as an Acquisition Project Manager and was stationed in Stuttgart, Germany from 2016 until October 2020 directly supporting the U.S. Africa and European Commands and their components. While in Germany, Erin was instrumental in growing FEDSIM’s opportunities with Department of Defense (DoD) clients across Europe and Africa.
+            <p>Erin Quick serves as FEDSIM’s Acquisition Quality Director and is responsible for leading pre-award activities and initiatives across FEDSIM. Erin previously served as an Acquisition Project Manager and was stationed in Stuttgart, Germany from 2016 until October 2020 directly supporting the U.S. Africa and European Commands and their components. While in Germany, Erin was instrumental in growing FEDSIM’s opportunities with Department of Defense (DoD) clients across Europe and Africa.
 <br><br>
-Erin has been with GSA since 2009 and with FEDSIM since 2012. In addition to serving as an Acquisition Project Manager, she previously served as a Project Manager/Contracting Officer’s Representative and as a Contract Specialist. Erin earned her Bachelor’s degree from Wake Forest University in 2009.
-</p>
+Erin has been with GSA since 2009 and with FEDSIM since 2012. In addition to serving as an Acquisition Project Manager, she previously served as a Project Manager/Contracting Officer’s Representative and as a Contract Specialist. Erin earned her Bachelor’s degree from Wake Forest University in 2009.</p>
             <p style="font-style: italic;">Click anywhere to close.</p>
         </div>
     </div>
@@ -478,22 +548,12 @@ Erin has been with GSA since 2009 and with FEDSIM since 2012. In addition to ser
                     </span>
                 </div>
             </div>
-            <p>Kristen Knapper serves as the Director of FEDSIM’s Civilian sector, overseeing acquisition
-                support services for FEDSIM’s federal civilian departments and agencies.
-                Kristen served as a Civilian Group and Air Force Group Manager
-                and managed several portfolios, including the U.S. Homeland Security,
-                U.S. Air Force Joint Strike Fighter PMO, U.S. Air Force Modeling and Simulation Agency, Office of
-                Management and Budget, General Services Administration (GSA), and Financial Deposit
-                Insurance Corporation (FDIC).
-                <br><br>
-                Kristen began her federal career in 1989 as a supply intern at the Department of the Army,
-                assigned to the Information Systems Management Activity (ISMA) at Fort Monmouth, New Jersey.
-                She has since served in several logistics and project management positions, including seven years as team lead for the Pentagon
-                Consolidated Technical Control Facility and the Network Systems Management Center.
-                <br><br>
-                Kristen received her bachelor’s degree in business logistics from the Pennsylvania State
-                University and a graduate certificate in project management from the George Washington
-                University.</p>
+            <p>Kristen Knapper has served as FEDSIM’s Civilian Director, since 2014 overseeing a cadre of acquisition and project management professionals supporting many federal civilian department and agency clients, such as  the Departments of State, Agriculture, Justice, and Homeland Security, the Environmental Protection Agency and Office of the Director of National Intelligence.
+<br><br>
+Kristen began her federal career as a supply intern with the Department of the Army, assigned to the Information Systems Management Activity (ISMA) at Fort Monmouth, New Jersey. She has since served in several logistics and project management positions most notably,  the Pentagon Renovation (PENREN) Program, the Defense Red Switch Network (DRSN) Program and the Assistant Secretary of Defense, Command, Control, Communication & Information (ASD, C3I).
+<br><br>
+Kristen received her BS in Business Logistics from Pennsylvania State University.  She also holds a Program Management certificate from the Defense Systems Management College, as well as a Project Management certificate from George Washington University.
+</p>
             <p style="font-style: italic;">Click anywhere to close.</p>
         </div>
     </div>
@@ -530,7 +590,7 @@ Erin has been with GSA since 2009 and with FEDSIM since 2012. In addition to ser
     <div class="dialog" role="dialog" >
         <div class="modalblock">
             <div class="flex-wrapper">
-                {% asset Mike-M.png class="member-pic" alt="Mike Marquez" %}
+                {% asset MikeMarquez.jpg class="member-pic" alt="Mike Marquez" %}
                 <div class="infoblock">
                     <span style="font-weight: bold;">
                         <p class="allcaps">Mike Marquez</p>
@@ -538,21 +598,14 @@ Erin has been with GSA since 2009 and with FEDSIM since 2012. In addition to ser
                     </span>
                 </div>
             </div>
-            <p>Mike Marquez serves as the Director for the Army/Navy sectors. Mike oversees the procurement
-                and management of contracts and task orders supporting the U.S. Army and U.S. Navy. He also
-                supports Combatant Commands including AFRICOM, EUCOM, PACOM, and SOUTHCOM.
-                <br><br>
-                Prior to joining FEDSIM, Mike was the Chief of the Contracting Office and Business Operations for
-                the Supervisor of Shipbuilding, Conversion, and Repair in Groton, Connecticut for the U.S. Navy.
-                He administered the contracts for the VIRGINIA Class and OHIO-Replacement submarines. Mike
-                also worked at Naval Sea Systems Command where
-                he served as a Procuring Contracting Officer for the Advanced Surface and Undersea Systems
-                Capabilities Programs.
-                <br><br>
-                Mike earned his bachelor’s degree in computer science from the University of San Diego and a
-                Master’s of Business Administration with an emphasis on acquisition and contract management
-                from the Naval Postgraduate School. Mike also attended the Joint Forces Staff College and the
-                Harvard Kennedy School of Government as a senior executive fellow.</p>
+            <p>Mike Marquez serves as the Director of the Army and Navy Sectors. Mike oversees groups of contracting officers and specialists, project managers, and property administrators in the procurement and management of contracts and task orders supporting the U.S. Army, Combatant Commands, several Department of Defense agencies, the U.S. Navy and the U.S. Marine Corps.
+<br><br>
+Mike joined FEDSIM as the Acquisition Director of the Civilian Sector. He moved to the Enterprise Sector as the Acquisition Director and later transitioned as the Sector Director.
+<br><br>
+Prior to joining FEDSIM, Mike was the Chief of the Contracting Office and Business Operations for the Supervisor of Shipbuilding, Conversion, and Repair in Groton, Connecticut for the U.S. Navy. He administered the production, modernization, and repair contracts for the VIRGINIA Class, LOS ANGELES Class, and OHIO-Replacement submarines. Mike transferred to Groton from the Naval Sea Systems Command at the Washington Navy Yard where he served as a Procuring Contracting Officer for the Advanced Surface and Undersea Systems Capabilities Programs.
+<br><br>
+Mike earned his bachelor’s degree in computer science from the University of San Diego and a Master’s of Business Administration with an emphasis on acquisition and contract management from the Naval Postgraduate School. Mike also attended the Joint Forces Staff College and the Harvard Kennedy School as a senior executive fellow.
+</p>
             <p style="font-style: italic;">Click anywhere to close.</p>
         </div>
     </div>
@@ -595,15 +648,15 @@ He holds a Bachelor of Science in Naval Architecture and Marine Engineering from
     <div class="dialog" role="dialog" >
         <div class="modalblock">
             <div class="flex-wrapper">
-                {% asset Laurel-W.png class="member-pic" alt="Laurel Weiskopf" %}
+                {% asset Laurel-W.png class="member-pic" alt="Laurel Weiskopf Smith" %}
                 <div class="infoblock">
                     <span style="font-weight: bold;">
-                        <p class="allcaps">Laurel Weiskopf</p>
+                        <p class="allcaps">Laurel Weiskopf Smith</p>
                         <p>Civilian Acquisition Director</p>
                     </span>
                 </div>
             </div>
-            <p>Laurel Weiskopf serves as the Acquisition Director (AD) for the Civilian sector at GSA FEDSIM.
+            <p>Laurel Weiskopf Smith serves as the Acquisition Director (AD) for the Civilian sector at GSA FEDSIM.
                 Laurel and her team support all civilian agencies such as the United States Department of
                 Agriculture, the Department of State, Environmental Protection Agency, among others. She is
                 responsible for leading all of the civilian sector contracting officers and contract specialists while
@@ -655,26 +708,17 @@ He holds a Bachelor of Science in Naval Architecture and Marine Engineering from
                 {% asset JM_pic.png class="member-pic" alt="Jeff McMullan" %}
                 <div class="infoblock">
                     <span style="font-weight: bold;">
-                        <p class="allcaps">Jeff McMullen</p>
+                        <p class="allcaps">Jeff McMullan</p>
                         <p>Army Acquisition Director</p>
                     </span>
                 </div>
             </div>
-            <p>Jeff is the Acquisition Director (AD) for the Army sector at GSA FEDSIM. He began his contracting
-                career at GSA&#39;s Kansas City office, where he worked for two years before transferring to FEDSIM
-                in 2012. Since then, Jeff served as a Contract Specialist, Contracting Officer and Team Lead
-                within FEDSIM&#39;s legacy Enterprise and Army/Navy Sectors. He oversees a staff that handles the
-                award and administration of a highly complex portfolio supporting Army customers.
-                <br><br>
-                Jeff earned his Bachelor’s degree in Business Administration from the University of Mississippi
-                and his M.B.A from the University of Missouri. Jeff’s leadership and contributions have been
-                recognized within GSA and across the federal Government through GSA’s Administrator’s Award
-                for Excellence, AFCEA’s Bethesda’s Emerging Government Leader of the Year, and NCMA’s
-                Advancing Professional Award.
-                <br><br>
-                His certifications include Active Top Secret/Sensitive Compartmented Information Clearance,
-                FAC-C Level III, FAC-COR Level III, Certified Professional Contracts Administrator (NCMA), and
-                Project Management Professional (PMI).</p>
+            <p>Jeff McMullan is the Acquisition Director (AD) for the Army sector at GSA FEDSIM. He began his contracting career at GSA's Kansas City office before transferring to FEDSIM in 2012. He oversees a staff that handles the award and administration of a highly complex portfolio supporting Army customers.
+<br><br>
+Jeff earned his Bachelor’s degree in Business Administration from the University of Mississippi and his M.B.A from the University of Missouri. Jeff’s leadership and contributions have been recognized within GSA and across the federal Government through GSA’s Administrator’s Award for Excellence, AFCEA’s Bethesda’s Emerging Government Leader of the Year, and NCMA’s Advancing Professional Award. 
+<br><br>
+His certifications include Active Top Secret/Sensitive Compartmented Information Clearance,  FAC-C Level III, FAC-COR Level III, Certified Professional Contracts Administrator (NCMA), and Project Management Professional (PMI). 
+</p>
             <p style="font-style: italic;">Click anywhere to close.</p>
         </div>
     </div>
@@ -693,18 +737,12 @@ He holds a Bachelor of Science in Naval Architecture and Marine Engineering from
                     </span>
                 </div>
             </div>
-            <p>Michael serves as the GSA FEDSIM Acquisition Director (AD) for the GCC sector, where he leads
-                a team of FEDSIM Contracting Officers and Contract Specialists to acquisition strategies that
-                achieve superior results for our customers. Michael leads these integrated acquisition teams and
-                ensures the government receives best value solutions from industry.
-                <br><br>
-                Michael was the lead acquisition professional for the Homeland sector for three years and more
-                recently was an integral part of FEDSIM’s Innovation sector championing GSA’s Commercial
-                Solutions Opening (CSO) and Small Business Innovation Research (SBIR) Phase III acquisition
-                projects.
-                <br><br>
-                He is active as a member of the American Council for Technology-Industry Advisory Council
-                (ACT-IAC) by serving on the ACT executive board as the NexUS Government Chair.</p>
+            <p>Michael serves as the GSA FEDSIM Acquisition Director for the GCC Sector, where he leads a team of FEDSIM Contracting Officers and Contract Specialists to acquisition strategies that achieve superior results for our customers. Michael leads these integrated acquisition teams and ensures the government receives best value solutions from industry. 
+<br><br>
+Michael was the lead acquisition professional for the Homeland Sector for three years and  more recently was an integral part of FEDSIM’s Innovation Sector championing GSA’s Commercial Solutions Opening (CSO) and Small Business Innovation Research (SBIR) Phase III acquisition projects.   
+<br><br>
+Michael is active in organizations that promote government partnerships with industry, and he has held leadership positions in both ACT-IAC and AFCEA.
+</p>
             <p style="font-style: italic;">Click anywhere to close.</p>
         </div>
     </div>
@@ -747,7 +785,7 @@ He holds a Bachelor of Science in Naval Architecture and Marine Engineering from
     <div class="dialog" role="dialog" >
         <div class="modalblock">
             <div class="flex-wrapper">
-                {% asset ShadowM_Icon.png class="member-pic" alt="Greg Lee" %}
+                {% asset GregLee.jpg class="member-pic" alt="Greg Lee" %}
                 <div class="infoblock">
                     <span style="font-weight: bold;">
                         <p class="allcaps">Greg Lee</p>
@@ -775,7 +813,7 @@ He holds a Bachelor of Science in Naval Architecture and Marine Engineering from
     <div class="dialog" role="dialog" >
         <div class="modalblock">
             <div class="flex-wrapper">
-                {% asset ShadowM_Icon.png class="member-pic" alt="Dennis Bailey" %}
+                {% asset DBailey_Flag.jpg class="member-pic" alt="Dennis Bailey" %}
                 <div class="infoblock">
                     <span style="font-weight: bold;">
                         <p class="allcaps">Dennis Bailey</p>
@@ -783,24 +821,12 @@ He holds a Bachelor of Science in Naval Architecture and Marine Engineering from
                     </span>
                 </div>
             </div>
-            <p>Dennis Bailey serves as the GSA FEDSIM Acquisition Director (AD) for the Navy sector. Prior to
-                joining FEDSIM, he had 6 years of contracting experience with the U.S. Naval Air System
-                Command (NAVAIR), the U.S. Naval Sea Systems Command (NAVSEA), and the Department of
-                Commerce National Institute of Standards and Technology (NIST). Dennis also has experience as an 
-                attorney, financial advisor, and tax accountant. Dennis is a U.S.
-                Marine Corps veteran, having served six years in a communications electronics (crypto)
-                occupational specialty.
-                <br><br>
-                Dennis holds a Bachelor’s in Information Systems Management from University of Maryland
-                University College, a Bachelor’s in Finance from Park University, a Doctor of Jurisprudence from
-                The University of Oklahoma College of Law, and a Master’s of Laws in taxation from the Golden
-                Gate University School of Law.
-                <br><br>
-                His certifications include FAC-C Level III, NCMA Certified Professional Contracts Manager
-                (CPCM), NCMA Certified Federal Contracts Manager (CFCM), and NCMA Certified Commercial
-                Contracts Manager (CCCM). Dennis is also an active member of the Oklahoma and Maryland Bar
-                Associations, the American Bar Association and its public contracts law section, as well as the
-                ABA&#39;s Federal Procurement Institute.</p>
+            <p>Dennis Bailey serves as Acquisition Director (AD) for the Navy sector at GSA FEDSIM. Prior to joining FEDSIM in 2018, Dennis had several years of contracting experience with the U.S. Naval Air System Command (NAVAIR), the U.S. Naval Sea Systems Command (NAVSEA), and the Department of Commerce’s National Institute of Standards and Technology (NIST). He also has several years of private sector experience as a trust and estates attorney, Merrill Lynch financial advisor, and senior tax accountant. Dennis is a U.S. Marine Corps veteran having served in the communications security (crypto) occupational specialty. 
+ <br><br>
+Dennis holds a Bachelor’s in Information Systems Management from University of Maryland University College, a Bachelor’s in Finance from Park University, a Doctor of Jurisprudence from The University of Oklahoma College of Law, and a Master of Laws in taxation from the Golden Gate University School of Law. He has also earned certificates in executive leadership and performance leadership from Cornell University. 
+<br><br>
+Dennis holds active FAC-C Level III, NCMA Certified Professional Contracts Manager (CPCM), NCMA Certified Federal Contracts Manager (CFCM), and NCMA Certified Commercial Contracts Manager (CCCM) certifications. Dennis is an active member of the Oklahoma and Maryland Bar Associations, the American Bar Association (ABA), the ABA public contracts law section and the ABA Federal Procurement Institute. He holds an active top secret (T5) security clearance.
+</p>
             <p style="font-style: italic;">Click anywhere to close.</p>
         </div>
     </div>
@@ -813,7 +839,7 @@ He holds a Bachelor of Science in Naval Architecture and Marine Engineering from
     <div class="dialog back-grey" role="dialog" onclick="javascript:closeBio();">
         <div class="modalblock back-grey"  tabindex="0">
 
-            <div class="sectorbar sector-1">
+            <div class="sectorbar-wide sector-1">
                 <h3>CIVILIAN</h3>
                 <br>
             </div>
@@ -821,27 +847,11 @@ He holds a Bachelor of Science in Naval Architecture and Marine Engineering from
             <div class="flex-wrapper">
                 
                 <div class="infoblock back-grey">
-                    {% asset NinaRaheja.jpg class="member-pic" alt="Nina Raheja" %}
-                    <p class="allcaps">Nina Raheja</p>
-                    <p>USAID/State</p>
+                    {% asset NydiaRA.jpg class="member-pic" alt="Nydia Roman-Albertorio" %}
+                    <p class="allcaps">Nydia Roman-Albertorio</p>
+                    <p>HHS/ASPR</p>
                 </div>
-
-                <div class="infoblock back-grey">
-                    {% asset LizHampton.jpg class="member-pic" alt="Liz Hampton" %}
-                    <p class="allcaps">Liz Hampton</p>
-                    <p>INTEL/ASPR</p>
-                </div>
-
-            </div>
-
-            <div class="flex-wrapper">
                 
-                <div class="infoblock back-grey">
-                    {% asset SamClark.jpg class="member-pic" alt="Sam Clark" %}
-                    <p class="allcaps">Sam Clark</p>
-                    <p>USDA/EPA</p>
-                </div>
-
                 <div class="infoblock back-grey">
                     {% asset KennyLawhorn.jpg class="member-pic" alt="Kenny Lawhorn" %}
                     <p class="allcaps">Kenny Lawhorn</p>
@@ -851,13 +861,29 @@ He holds a Bachelor of Science in Naval Architecture and Marine Engineering from
             </div>
 
             <div class="flex-wrapper">
+
+                <div class="infoblock back-grey">
+                    {% asset MelissaDruxman.jpg class="member-pic" alt="Melissa Druxman" %}
+                    <p class="allcaps">Melissa Druxman</p>
+                    <p>INTEL</p>
+                </div>
                 
                 <div class="infoblock back-grey">
-                    {% asset ShadowF_Icon.png class="member-pic" alt="Kelsey Davis" %}
-                    <p class="allcaps">Kelsey Davis</p>
-                    <p>HHS ASPR</p>
+                    {% asset NinaRaheja.jpg class="member-pic" alt="Nina Raheja" %}
+                    <p class="allcaps">Nina Raheja</p>
+                    <p>USAID/State</p>
                 </div>
 
+            </div>
+            
+            <div class="flex-wrapper">
+
+                <div class="infoblock back-grey">
+                    {% asset SamClark.jpg class="member-pic" alt="Sam Clark" %}
+                    <p class="allcaps">Sam Clark</p>
+                    <p>USDA/EPA</p>
+                </div>
+               
             </div>
             
             <div class="infoblock back-grey">
@@ -873,7 +899,7 @@ He holds a Bachelor of Science in Naval Architecture and Marine Engineering from
     <div class="dialog back-grey" role="dialog" onclick="javascript:closeBio();">
         <div class="modalblock back-grey"  tabindex="0">
 
-            <div class="sectorbar sector-2">
+            <div class="sectorbar-wide sector-2">
                 <h3>AIR FORCE</h3>
                 <br>
             </div>
@@ -892,6 +918,12 @@ He holds a Bachelor of Science in Naval Architecture and Marine Engineering from
                     <p>Intel/ISR</p>
                 </div>
 
+                <div class="infoblock back-grey">
+                    {% asset LateefHynson.jpg class="member-pic" alt="Lateef Hynson" %}
+                    <p class="allcaps">Lateef Hynson</p>
+                    <p>FCC</p>
+                </div>
+
             </div>
             
             <div class="infoblock back-grey">
@@ -907,7 +939,7 @@ He holds a Bachelor of Science in Naval Architecture and Marine Engineering from
     <div class="dialog back-grey" role="dialog" onclick="javascript:closeBio();">
         <div class="modalblock back-grey"  tabindex="0">
 
-            <div class="sectorbar sector-3">
+            <div class="sectorbar-wide sector-3">
                 <h3>DOD</h3>
                 <br>
             </div>
@@ -915,9 +947,9 @@ He holds a Bachelor of Science in Naval Architecture and Marine Engineering from
             <div class="flex-wrapper">
                 
                 <div class="infoblock back-grey">
-                    {% asset LateefHynson.jpg class="member-pic" alt="Lateef Hynson" %}
-                    <p class="allcaps">Lateef Hynson</p>
-                    <p>FCC</p>
+                    {% asset LarryBlocker.jpg class="member-pic" alt="Larry Blocker" %}
+                    <p class="allcaps">Larry Blocker</p>
+                    <p>Defense Intel</p>
                 </div>
 
                 <div class="infoblock back-grey">
@@ -957,33 +989,39 @@ He holds a Bachelor of Science in Naval Architecture and Marine Engineering from
     <div class="dialog back-grey" role="dialog" onclick="javascript:closeBio();">
         <div class="modalblock back-grey"  tabindex="0">
 
-            <div class="sectorbar sector-4">
+            <div class="sectorbar-wide sector-4">
                 <h3>ARMY</h3>
                 <br>
             </div>
 
             <div class="flex-wrapper">
                 
-                <div class="infoblock back-grey">
+                <div class="infoblock back-grey" style="margin-top: 0;">
                     {% asset KellySwain.jpg class="member-pic" alt="Kelly Swain" %}
                     <p class="allcaps">Kelly Swain</p>
-                    <p>C6ISR</p>
+                    <p>C6</p>
                 </div>
 
                 <div class="infoblock back-grey">
                     {% asset TamikaSpencer.jpg class="member-pic" alt="Tamika Spencer" %}
                     <p class="allcaps">Tamika Spencer</p>
-                    <p>Technology Integrated Services</p>
+                    <p>Technology <br>Integrated Services</p>
                 </div>
 
             </div>
-
-            <div class="flex-wrapper">
+            
+             <div class="flex-wrapper">
                 
-                <div class="infoblock back-grey" style="margin: auto;">
+                <div class="infoblock back-grey" style="margin-top: 0;">
                     {% asset JustinGrasso.jpg class="member-pic" alt="Justin Grasso" %}
                     <p class="allcaps">Justin Grasso</p>
                     <p>IT</p>
+                </div>
+
+                <div class="infoblock back-grey">
+                    {% asset JessicaCassidy.jpg class="member-pic" alt="Jessica Cassidy" %}
+                    <p class="allcaps">Jessica Cassidy</p>
+                    <p>ISR</p>
                 </div>
 
             </div>
@@ -1001,7 +1039,7 @@ He holds a Bachelor of Science in Naval Architecture and Marine Engineering from
     <div class="dialog back-grey" role="dialog" onclick="javascript:closeBio();">
         <div class="modalblock back-grey"  tabindex="0">
 
-            <div class="sectorbar sector-5">
+            <div class="sectorbar-wide sector-5">
                 <h3>NAVY</h3>
                 <br>
             </div>
@@ -1015,9 +1053,15 @@ He holds a Bachelor of Science in Naval Architecture and Marine Engineering from
                 </div>
                 
                 <div class="infoblock back-grey">
-                    {% asset BrookeGill.jpg class="member-pic" alt="Brooke Gill" %}
-                    <p class="allcaps">Brooke Gill</p>
-                    <p>Sensing Technologies</p>
+                    {% asset AaronYoung.jpg class="member-pic" alt="Aaron Young" %}
+                    <p class="allcaps">Aaron Young</p>
+                    <p>Sensing Technology</p>
+                </div>
+                
+                <div class="infoblock back-grey">
+                    {% asset DomSalli.jpg class="member-pic" alt="Dom Salli" %}
+                    <p class="allcaps">Dom Salli</p>
+                    <p>Technical & Quality Services</p>
                 </div>
 
             </div>
@@ -1035,7 +1079,7 @@ He holds a Bachelor of Science in Naval Architecture and Marine Engineering from
     <div class="dialog back-grey" role="dialog" onclick="javascript:closeBio();">
         <div class="modalblock back-grey"  tabindex="0">
 
-            <div class="sectorbar sector-6">
+            <div class="sectorbar-wide sector-6">
                 <h3>GCC</h3>
                 <br>
             </div>
@@ -1043,8 +1087,8 @@ He holds a Bachelor of Science in Naval Architecture and Marine Engineering from
             <div class="flex-wrapper">
                 
                 <div class="infoblock back-grey">
-                    {% asset TilaKety.jpg class="member-pic" alt="Tila Kety" %}
-                    <p class="allcaps">Tila Kety</p>
+                    {% asset AaronYoung.jpg class="member-pic" alt="Aaron Young" %}
+                    <p class="allcaps">Aaron Young</p>
                     <p>Central & Southern</p>
                 </div>
 
@@ -1053,10 +1097,6 @@ He holds a Bachelor of Science in Naval Architecture and Marine Engineering from
                     <p class="allcaps">Tony Jungers</p>
                     <p>Europe & Africa</p>
                 </div>
-
-            </div>
-
-            <div class="flex-wrapper">
                 
                 <div class="infoblock back-grey" style="margin: auto;">
                     {% asset WesDewalt.png class="member-pic" alt="Wes Dewalt" %}
@@ -1080,39 +1120,62 @@ He holds a Bachelor of Science in Naval Architecture and Marine Engineering from
     <div class="dialog back-grey" role="dialog" onclick="javascript:closeBio();">
         <div class="modalblock back-grey"  tabindex="0">
 
-            <div class="sectorbar sector-7">
+            <div class="sectorbar-wide sector-7">
                 <h3>INNOVATION</h3>
                 <br>
             </div>
 
-            <div class="flex-wrapper">
-                
-                <div class="infoblock back-grey">
-                    {% asset CB_pic.png class="member-pic" alt="Chris Bennethum" %}
-                    <p class="allcaps">Chris Bennethum</p>
-                    <p>Assistant Commissioner, AAS</p>
-                </div>
+            <div class="flex-wrapper">             
 
                 <div class="infoblock back-grey">
-                    {% asset CB_pic.png class="member-pic" alt="Chris Bennethum" %}
-                    <p class="allcaps">Chris Bennethum</p>
-                    <p>Assistant Commissioner, AAS</p>
+                    {% asset GaryWhite.jpg class="member-pic" alt="Gary White" %}
+                    <p class="allcaps">Gary White</p>
+                    <p>INNO 1</p>
+                </div>
+                
+                <div class="infoblock back-grey">
+                    {% asset AlexRouse.png class="member-pic" alt="Alex Rouse" %}
+                    <p class="allcaps">Alex Rouse</p>
+                    <p>INNO 2</p>
+                </div>
+                
+                <div class="infoblock back-grey">
+                    {% asset JimGhiloni.jpg class="member-pic" alt="Jim Ghiloni" %}
+                    <p class="allcaps">Jim Ghiloni</p>
+                    <p>IDIQ Labs</p>
                 </div>
 
             </div>
+            
+            <div class="infoblock back-grey">
+                <p class="small-italic">Click anywhere on this box to close.</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- APM popup -->
+<div id="sectorPopup_APM" class="dialog-overlay" aria-hidden="true">
+    <div class="dialog back-grey" role="dialog" onclick="javascript:closeBio();">
+        <div class="modalblock back-grey"  tabindex="0">
+
+            <div class="sectorbar-wide sector-8">
+                <h3>APM</h3>
+                <br>
+            </div>
 
             <div class="flex-wrapper">
-                
+
                 <div class="infoblock back-grey">
-                    {% asset CB_pic.png class="member-pic" alt="Chris Bennethum" %}
-                    <p class="allcaps">Chris Bennethum</p>
-                    <p>Assistant Commissioner, AAS</p>
+                    {% asset LLevandowski.jpg class="member-pic" alt="Larry Levandowski" %}
+                    <p class="allcaps">Larry Levandowski</p>
+                    <p>APM 1</p>
                 </div>
 
                 <div class="infoblock back-grey">
-                    {% asset CB_pic.png class="member-pic" alt="Chris Bennethum" %}
-                    <p class="allcaps">Chris Bennethum</p>
-                    <p>Assistant Commissioner, AAS</p>
+                    {% asset EJohnson.jpg class="member-pic" alt="Elcindor Johnson" %}
+                    <p class="allcaps">Elcindor Johnson</p>
+                    <p>APM 2</p>
                 </div>
 
             </div>

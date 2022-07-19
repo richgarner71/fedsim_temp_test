@@ -1,6 +1,7 @@
 ruby '>= 2.5.7'
 
-source "https://rubygems.org"
+source 'https://rubygems.org'
+gem 'github-pages'
 
 # Hello! This is where you manage which Jekyll version is used to run.
 # When you want to use a different version, change it below, save the
@@ -10,7 +11,7 @@ source "https://rubygems.org"
 #
 # This will help ensure the proper Jekyll version is running.
 # Happy Jekylling!
-gem "jekyll", "~> 3.8"
+gem "jekyll", "~> 3.7"
 
 # See https://github.com/envygeeks/jekyll-assets/issues/622
 gem "sprockets", "~> 3.7"

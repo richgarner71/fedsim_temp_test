@@ -80,10 +80,6 @@ primary_navigation:
     children:
       - name: Our Work
         url: /ourwork/
-      - name: ASTRO
-        url: /astro/
-      - name: ASTRO FAQ
-        url: /astrofaq/
       - name: CSO
         url: /cso/
   - name: Careers
@@ -198,7 +194,7 @@ assets:
     - node_modules/uswds/dist/js
     - node_modules/uswds/dist/scss
     - node_modules/netlify-cms/dist
-    - _assets/image
-    - _assets/image/members
+    - _assets/images
+    - _assets/images/members
+    - _assets/images/usa-icons-bg
     - _assets/fonts
-    - _assets/favicons
